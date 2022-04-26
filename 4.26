@@ -1,0 +1,9 @@
+def solution(participant, completion):    
+    answer=[]
+    participant = list(participant)
+    completion = list(completion)
+    for answ in participant:
+        if answ not in completion:
+            continue
+        answer.append(answ)
+    return answer
